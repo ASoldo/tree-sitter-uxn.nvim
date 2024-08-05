@@ -19,6 +19,7 @@ local function setup()
 	local highlights_scm = [[
 			(keyword) @keyword
 			(function) @function
+			(subroutine_call) @function
 			(value) @number
 			(identifier) @constant
     ]]
