@@ -17,7 +17,12 @@ local function setup()
 	}
 
 	local highlights_scm = [[
-    (keyword) @keyword
+			(pipe_instruction) @keyword
+			(at_instruction) @function
+			(amp_instruction) @string
+			(dollar_instruction) @number
+			(function_instruction) @keyword
+			(string_instruction) @string
     ]]
 
 	local runtime_path = vim.fn.stdpath("cache")
