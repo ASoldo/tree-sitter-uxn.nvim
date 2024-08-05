@@ -2,7 +2,7 @@ local function setup()
 	vim.filetype.add({
 		extension = {
 			uxn = "uxn",
-			rom = "rom",
+			rom = "uxn",
 		},
 	})
 
