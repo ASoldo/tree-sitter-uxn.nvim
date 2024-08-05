@@ -21,6 +21,7 @@ local function setup()
 			(function) @function
 			(subroutine_call) @function
 			(value) @number
+			(string) @string
 			(identifier) @constant
     ]]
 
