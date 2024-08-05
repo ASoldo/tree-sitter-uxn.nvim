@@ -20,6 +20,7 @@ local function setup()
 			(keyword) @keyword
 			(function) @function
 			(value) @number
+			(identifier) @constant
     ]]
 
 	local runtime_path = vim.fn.stdpath("cache")
