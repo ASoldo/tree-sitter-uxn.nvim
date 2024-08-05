@@ -30,17 +30,6 @@ local function setup()
 		io.write(highlights_scm)
 		io.close(highlights_file)
 	end
-
-	-- Autocmd to enable Tree-sitter highlight for uxn files
-	vim.api.nvim_exec(
-		[[
-      augroup UxnHighlight
-        autocmd!
-        autocmd BufRead,BufNewFile *.uxn TSBufEnable highlight
-      augroup END
-    ]],
-		false
-	)
 end
 
 return { setup = setup }
